@@ -1,0 +1,454 @@
+{% extends 'base.html' %}
+{% load humanize %}
+
+{% block content %}
+
+                    <!-- <div class="col-lg-12"> or "columns" -->
+                    <div class="col-lg-12">
+                        <h1 class="page-header">
+                            Summary
+                        </h1>
+                    <p hidden>Error: {{error}}</p>
+                    <p hidden>Stock: {{stock}}</p>
+                    <p hidden>Files: {{names}}</p>
+                    <p hidden>Files path: {{files}}</p>
+                    <p hidden>CSV Files: {{csv_files}}</p>
+                    <p hidden>Pickle File: {{pickle_file}}</p>
+                    <p hidden>Ratios: {{ratios}}</p>
+                    <p hidden>Price: {{price}}</p>
+                    <p hidden>Market Cap: {{market_cap}}</p>
+                    <p hidden>CoCaD: {{cocad}}</p>
+                    <p hidden>{{ratios}}</p>
+                        <form role="form" method="POST">
+                            {% csrf_token %}
+                            <fieldset>
+
+                                <div class="form-group">
+                                    <label for="disabledSelect">Stock Code</label>
+                                    <input class="form-control" id="disabledInput" type="text" placeholder=" stock" name="stock">
+                                </div>
+
+
+                                <button type="submit" class="btn btn-primary"> Button</button>
+                                {% if stock %}
+                                    {% if files %}
+                                        </br>
+                                        </br>
+                                    {% else %}
+                                        </br>
+                                        <p>We do not have data available for the stock {{stock}}</p>
+                                        </br>
+                                    {% endif %}
+                                {% endif %}
+                            </fieldset>
+
+                        </form>
+
+                    {% if ratios %}
+
+                        <div class="panel panel-default"> 
+                            <div class="panel-body">
+                                <div class="table-responsive" style="min-height: 180px;">
+                                    <table class="table table-bordered table-hover table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>Performance</th>
+                                                <th>1Y</th>
+                                                <th>5Y</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>EPS Basic</td>
+                                                <td>${{ratios.1.eps_basic|floatformat:2|intcomma}}</td>
+                                                <td>${{ratios.5.eps_basic|floatformat:2|intcomma}}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>EPS Diluted</td>
+                                                <td>${{ratios.1.eps_diluted|floatformat:2|intcomma}}</td>
+                                                <td>${{ratios.5.eps_diluted|floatformat:2|intcomma}}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Net Income</td>
+                                                <td>${{ratios.1.net_income|floatformat:2|intcomma}}</td>
+                                                <td>${{ratios.5.net_income|floatformat:2|intcomma}}</td>
+                                            </tr>                                           
+                                            <tr>
+                                                <td>Revenue</td>
+                                                <td>${{ratios.1.revenue|floatformat:2|intcomma}}</td>
+                                                <td>${{ratios.5.revenue|floatformat:2|intcomma}}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Dividend per Share</td>
+                                                <td>${{ratios.1.dividends_per_share|floatformat:2|intcomma}}</td>
+                                                <td>${{ratios.5.dividends_per_share|floatformat:2|intcomma}}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>ROE</td>
+                                                <td>{{ratios.1.ROE|floatformat:2|intcomma}}%</td>
+                                                <td>{{ratios.5.ROE|floatformat:2|intcomma}}%</td>
+                                            </tr>
+                                            <tr>
+                                                <td>ROA</td>
+                                                <td>{{ratios.1.ROA|floatformat:2|intcomma}}%</td>
+                                                <td>{{ratios.5.ROA|floatformat:2|intcomma}}%</td>
+                                            </tr>
+                                            <tr>
+                                                <td>ROIC</td>
+                                                <td>{{ratios.1.roic|floatformat:2|intcomma}}%</td>
+                                                <td>{{ratios.5.roic|floatformat:2|intcomma}}%</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Cost of Capital</td>
+                                                <td>{{cocad.cost_of_capital}}</td>
+                                                <td></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Gross Profit</td>
+                                                <td>${{ratios.1.gross_profit|intword}}</td>
+                                                <td>${{ratios.5.gross_profit|intword}}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Operating Margin</td>
+                                                <td>{{ratios.1.operating_margin}}</td>
+                                                <td>{{ratios.5.operating_margin}}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Liquidation Value</td>
+                                                {% if ratios.1.Liquidation_Val|intword >= 0 %}
+                                                   <td>${{ratios.1.Liquidation_Val|intword}}</td>
+                                                {% else %}                               
+                                                   <td>$-{{ratios.1.Liquidation_Val|stringformat:"d"|cut:"-"|intword}}</td>
+                                                {% endif %}
+                                                {% if ratios.5.Liquidation_Val|intword >= 0 %}
+                                                   <td>${{ratios.5.Liquidation_Val|intword}}</td>
+                                                {% else %}
+                                                   <td>$-{{ratios.5.Liquidation_Val|stringformat:"d"|cut:"-"|intword}}</td>
+                                                {% endif %}
+                                            </tr>
+                                            <tr>
+                                                <td>Debt-Equity Debt</td>
+                                                <td>{{ratios.1.Debt_Equity_Debt|floatformat:2|intcomma}}</td>
+                                                <td>{{ratios.5.Debt_Equity_Debt|floatformat:2|intcomma}}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Total Debt</td>
+                                                <td>${{ratios.1.Total_Debt|intword}}</td>
+                                                <td>${{ratios.5.Total_Debt|intword}}</td>
+                                            </tr>
+                                                <td>Interest Coverage</td>
+                                                <td>{{ratios.1.interest_coverages|floatformat:2|intcomma}}</td>
+                                                <td>{{ratios.5.interest_coverages|floatformat:2|intcomma}}</td>
+                                            </tr>
+                                            </tr>
+                                                <td>Working Capital</td>
+                                                <td>${{ratios.1.working_capital|floatformat:2|intcomma}}</td>
+                                                <td>${{ratios.5.working_capital|floatformat:2|intcomma}}</td>
+                                            </tr>
+                                            </tr>
+                                                <td>Working Capital (less inventories)</td>
+                                                {% if ratios.1.Working_Capital_less_invetories >= 0 %}
+                                                    <td>${{ratios.1.Working_Capital_less_invetories|intword}}</td>
+                                                {% else %}
+                                                    <td>$-{{ratios.1.Working_Capital_less_invetories|stringformat:"d"|cut:"-"|intword}}</td>
+                                                {% endif %}
+                                                {% if ratios.5.Working_Capital_less_invetories >= 0 %}
+                                                    <td>${{ratios.5.Working_Capital_less_invetories|intword}}</td>
+                                                {% else %}
+                                                    <td>$-{{ratios.5.Working_Capital_less_invetories|stringformat:"d"|cut:"-"|intword}}</td>
+                                                {% endif %}
+                                            </tr>
+                                            </tr>
+                                                <td>Free Cash Flow to Security Holders</td>
+                                                <td>${{ratios.1.Free_Cash_Flow_to_Security_Holders|floatformat:2|intcomma}}</td>
+                                                <td>${{ratios.5.Free_Cash_Flow_to_Security_Holders|floatformat:2|intcomma}}</td>
+                                            </tr>
+                                            </tr>
+                                                <td>Free Cash Flow to Shareholders</td>
+                                                {% if ratios.1.Free_Cash_Flow_to_Shareholders >= 0 %}
+                                                    <td>${{ratios.1.Free_Cash_Flow_to_Shareholders|intword}}</td>
+                                                {% else %}
+                                                    <td>$-{{ratios.1.Free_Cash_Flow_to_Shareholders|stringformat:"d"|cut:"-"|intword}}</td>
+                                                {% endif %}
+                                                {% if ratios.5.Free_Cash_Flow_to_Shareholders >= 0 %}
+                                                    <td>${{ratios.5.Free_Cash_Flow_to_Shareholders|intword}}</td>
+                                                {% else %}
+                                                    <td>$-{{ratios.5.Free_Cash_Flow_to_Shareholders|stringformat:"d"|cut:"-"|intword}}</td>
+                                                {% endif %}
+                                            </tr>
+                                            </tr>
+                                                <td>Total Current Assets</td>
+                                                <td>${{ratios.1.total_current_assets|intword}}</td>
+                                                <td>${{ratios.5.total_current_assets|intword}}</td>
+                                            </tr>
+                                            </tr>
+                                                <td>Cash at end of period</td>
+                                                <td>${{ratios.1.Cash_at_end_of_period|intword}}</td>
+                                                <td>${{ratios.5.Cash_at_end_of_period|intword}}</td>
+                                            </tr>
+                                            </tr>
+                                                <td>Book Value</td>
+                                                <td>${{ratios.1.Book_Value|intword}}</td>
+                                                <td>${{ratios.5.Book_Value|intword}}</td>
+                                            </tr>
+                                            
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    
+
+                        <div class="panel panel-default"> 
+                            <div class="panel-body">
+                                <div class="table-responsive" style="min-height: 180px;">
+                                    <table class="table table-bordered table-hover table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>Valuation Measures</th>
+                                                <th>1Y</th>
+                                                <th>5Y</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Market Capitalisation</td>
+                                                <td>${{market_cap|intword}}</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Price</td>
+                                                <td>${{price|floatformat:2|intcomma}}</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Price-Book</td>
+                                                <td>{{ratios.1.Price_Book|floatformat:2|intcomma}}</td>
+                                                <td>{{ratios.5.Price_Book|floatformat:2|intcomma}}</td>
+                                            </tr>                                           
+                                            <tr>
+                                                <td>Price-Working</td>
+                                                <td>{{ratios.1.Price_Working|intword}}</td>
+                                                <td>{{ratios.5.Price_Working|intword}}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Price-Liquidation</td>
+                                                <td>{{ratios.1.Price_Liquidation|floatformat:2|intcomma}}</td>
+                                                <td>{{ratios.5.Price_Liquidation|floatformat:2|intcomma}}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Price-Current Assets</td>
+                                                <td>{{ratios.1.Price_Current_Assets|floatformat:2|intcomma}}</td>
+                                                <td>{{ratios.5.Price_Current_Assets|floatformat:2|intcomma}}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Price-Cash Assets</td>
+                                                <td>{{ratios.1.Price_Cash_Assets|floatformat:2|intcomma}}</td>
+                                                <td>{{ratios.5.Price_Cash_Assets|floatformat:2|intcomma}}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Price-Earnings</td>
+                                                <td>{{ratios.1.Price_Earnings|floatformat:2|intcomma}}</td>
+                                                <td>{{ratios.5.Price_Earnings|floatformat:2|intcomma}}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Price-Sales</td>
+                                                <td>{{ratios.1.Price_Sales|floatformat:2|intcomma}}</td>
+                                                <td>{{ratios.5.Price_Sales|floatformat:2|intcomma}}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Price-Debt</td>
+                                                <td>{{ratios.1.Price_Debt|floatformat:2|intcomma}}</td>
+                                                <td>{{ratios.5.Price_Debt|floatformat:2|intcomma}}</td>
+                                            </tr>
+                                            </tr>
+                                                <td>FCF Coupon</td>
+                                                <td>{{ratios.1.Free_Cash_Flow_percent|floatformat:2|intcomma}}</td>
+                                                <td>{{ratios.5.Free_Cash_Flow_percent|floatformat:2|intcomma}}</td>
+                                            </tr>
+                                            </tr>
+                                                <td>FCF (to Equity) Coupon</td>
+                                                <td>{{ratios.1.FCF_to_Equity_Coupon|floatformat:2|intcomma}}</td>
+                                                <td>{{ratios.5.FCF_to_Equity_Coupon|floatformat:2|intcomma}}</td>
+                                            </tr>
+                                            </tr>
+                                                <td>Dividend Yield</td>
+                                                <td>{{cocad.dividend}}%</td>
+                                                <td>{{cocad.dividend_five_years}}%</td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                                                <div class="panel panel-default"> 
+                            <div class="panel-body">
+                                <div class="table-responsive" style="min-height: 180px;">
+                                    <table class="table table-bordered table-hover table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>Valuation Models</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>5 Year EPS</td>
+                                                <td>{{ratios.5.Earnings_Per_Share|floatformat:2|intcomma}}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>P/E Ratio + Growth Rate</td>
+                                                <td>{{ratios.5.P_E_rat_plus_revenue_gro|floatformat:2|intcomma}}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Risk Free Rate ('63)</td>
+                                                <td>4.4</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Corp Bond Rate</td>
+                                                <td>{{bond_data|floatformat:2|intcomma}}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Intrinsic Value</td>
+                                                <td>{{ratios.5.Intrinsic_Value|floatformat:2|intcomma}}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Current Margin of Safety</td>
+                                                <td>{{ratios.5.Current_Margin_of_Safety|floatformat:2|intcomma}}</td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <div class="table-responsive" style="min-height: 180px;">
+                                    <table class="table table-bordered table-hover table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>DCF Analysis</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td></td>
+                                                <td>{{cocad.intrinsic_value}}</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                                            
+
+                    {% endif %}                    
+
+                    {% if stockdata %}
+                     
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <div class="table-responsive" style="min-height: 180px;">
+                                    <table class="table table-bordered table-hover table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>Stock</th>
+                                                <th>Date</th>
+                                                <th>Price-Book Value</th>
+                                                <th>Debt-Equity</th>
+                                                <th>P/E</th>
+                                                <th>FCF</th>
+                                                <th>PEG</th>
+                                                <th>ROIC</th>
+                                                <th>Exchange</th>
+                                                <th>Name</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            {% for dictionary in stockdata %}
+                                            <tr>
+                                                <td>                                                
+                                                <div class="btn-group">
+                                                    <form method="POST">
+						        <button type="button" class="btn btn-secondary btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						            {{dictionary.stock}}
+						        </button>
+						        <ul class="dropdown-menu" role="menu">
+               				                <li onclick='aditionalTables("IS","{{dictionary.stock}}","{{forloop.counter0}}")'>
+                                                            <a>Income Statement</a></li>
+       						        <li onclick='aditionalTables("BS","{{dictionary.stock}}","{{forloop.counter0}}")'>
+                                                            <a>Balance Sheet</a></li>
+						        <li onclick='aditionalTables("CF","{{dictionary.stock}}","{{forloop.counter0}}")'>
+                                                            <a>Cash Flow</a></li>
+						        </ul>
+						    </form>
+						</div>
+                                                </td>
+                                                <td>{{dictionary.date}}</td>
+                                                <td>{{dictionary.bookValue}}</td>
+                                                <td>{{dictionary.debtEquitity}}</td>
+                                                <td>{{dictionary.priceEarning}}</td>
+                                                <td>{{dictionary.freecashflowpercent}}</td>
+                                                <td>{{dictionary.priceEarningGrowth}}</td>
+                                                <td>{{dictionary.roic}}</td>
+                                                <td>{{dictionary.exchange}}</td>
+                                                <td>{{dictionary.name}}</td>
+                                            </tr>
+                                            {% endfor %}
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endif %}
+
+                    {% if stock %}
+                        {% if files %}
+                    <div class="col-lg-12">
+                        <div class="panel panel-default">
+                            {% for larger_dictionary in data %}
+
+                            <div class="panel-heading">
+                                
+                                <h3 class="panel-title"><i class="fa fa-money fa-fw"></i> {{larger_dictionary.title}}</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered table-hover table-striped">
+                                        <thead>
+                                            <tr>
+                                                {% for column in larger_dictionary.columns %}
+                                                    <th>{{column}}</th>
+                                                {% endfor %}
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            {% for dictionary in larger_dictionary.dicts%}
+                                                <tr>
+                                                    {% for key, values in dictionary.items %}
+                                                        <td>{{values}}</td>
+                                                    {% endfor %}
+                                                </tr>
+                                                {% endfor %}
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="text-right">
+                                    <a href="/admin">View Tables <i class="fa fa-arrow-circle-right"></i></a>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                        {% endif %}
+                    {% endif %}
+
+
+{% endblock %}

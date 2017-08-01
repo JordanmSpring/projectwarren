@@ -1,0 +1,644 @@
+,exchange,code
+0,"Abidjan SE, Non-Exchange FI Update",#CI
+1,Abidjan Stock Exchange,ABJ
+2,Abu Dhabi Stock Exchange,ABD
+3,ADIX Brokers Group,ABC
+4,AGRARIAN STOCK EXCHANGE OF GUATEMALA,ASG
+5,AHMEDABAD STOCK EXCHANGE,AHM
+6,"AIAF S.A., Mercado de Renta Fija",AIF
+7,Alberta Stock Exchange,ALB
+8,Algiers Stock Exchange,ALG
+9,American Commodity Exchange,ACC
+10,American Options Exchange,AOE
+11,American Petroleum Institute,AP$
+12,American Stock Excahnge for Nasdaq Large Cap,LCA
+13,American Stock Exchange,ASE
+14,American Stock Exchange for Nasdaq Small Cap,SCA
+15,AMEX Consolidated,ASQ
+16,Amman Financial Market,AMM
+17,Amsterdam Agricultural Commodities Exchange,ATA
+18,Amsterdam Commodity Exchange,ACE
+19,Amsterdam Financial Futures Exchange,AFF
+20,Amsterdam Power Exchange,APX
+21,Amsterdam Stock Exchange,AMS
+22,Antwerp Stock Exchange,ANT
+23,ARA Products Barge,AR$
+24,Archipelago L.L.C.,ARC
+25,Asian Saturday Rates,ST$
+26,Asuncion Stock Exchange,ASU
+27,Athens Derivatives Exchange,ADE
+28,Athens Stock Exchange,ATH
+29,"Australia, Non-Exchange FI Update",#AU
+30,Australian Derivatives Exchange (AUDX),ADX
+31,Australian Energy Data,EAX
+32,Australian Money Rates,AU$
+33,Australian Stock Exchange Ltd,ASX
+34,"Austria, Non-Exchange FI Update",#AT
+35,Austrian Futures and Options Exchange (OTOB),OTB
+36,Automated Power Exchange,APE
+37,AVK Closing Joint Stock Co,AVK
+38,Bahamas International Securities Exchange,BIX
+39,Baltic International Freight Futures Exchange (BIFFEX),BIF
+40,Baltimore Stock Exchange,BAL
+41,Bangkok Stock Exchange,BKK
+42,Bangok Stock Dealing Centre,TOT
+43,Banja Luka Exchange,BNL
+44,Bank Negara Malaysia,BNC
+45,Bank Of Greece,BKG
+46,Basel Stock Exchange,BSL
+47,Beijing Commodities Exchange,BJC
+48,Beijing Petroleum Exchange,BPX
+49,Beirut Secondary Market,BES
+50,Beirut Stock Exchange,BDB
+51,Belarus Intercurrency and Stock Exchange,BLE
+52,Belarusian Currency and Stock Exchange,BCS
+53,Belgian Futures and Options Exchange (BELFOX),BFX
+54,"Belgium, Non-Exchange FI Update",#BE
+55,Belgrade Stock Exchange,BEL
+56,Berlin Stock Exchange,BER
+57,Berne Stock Exchange,BRN
+58,Bilbao Stock Exchange,BIL
+59,"Board of Trade of the City of New York, Inc. (Coffee, Sugar, Cocoa Options)",CSO
+60,"Board of Trade of the City of New York, Inc. (Coffee,Sugar and Cocoa)",CSC
+61,"Board of Trade of the City of New York, Inc. (NYCE - Cotton)",NYC
+62,"Board of Trade of the City of New York, Inc. (NYFE - Futures)",NYF
+63,"Board of Trade of the City of New York, Inc. CEC (Options)",CEO
+64,Bogota Stock Exchange,BOG
+65,Bolivian Stock Exchange,LPA
+66,Bombay Stock Exchange,BSE
+67,Bond Exchange of South Africa,BZA
+68,Bordeaux Stock Exchange,BOR
+69,Boston Options Exchange,BOX
+70,Boston Stock Exchange for Nasdaq Large Cap,LCB
+71,Boston Stock Exchange for Nasdaq Small Cap,SCB
+72,Boston Stock Exchange Inc,BOS
+73,Botswana Stock Exchange,BSM
+74,Bratislava Options Exchange,BOB
+75,Bratislava Stock Exchange,BRA
+76,Brazilian Commodities and Futures Exchange,BBF
+77,Bremen Stock Exchange,BRE
+78,Brussels Stock Exchange Options,BOE
+79,Budapest Commodity Exchange,BCE
+80,Budapest Stock Exchange,BUD
+81,Buenos Aires Stock Exchange,BUE
+82,Bulgarian Stock Exchange - Sofia,BLG
+83,Cairo Stock Exchange,CAI
+84,CALI Stock Exchange,CLI
+85,"Canada, Non-Exchange FI Update",#CA
+86,Canadian Dealing Network,CDN
+87,Canadian Mutual Fund Exchange,CMF
+88,Canadian Natural Gas,CG$
+89,Canadian Trading and Quotation System Inc,CNQ
+90,CanDeal,CDG
+91,CanPX,CPX
+92,Cantor Financial Futures Exchange,CFF
+93,Caracas Stock Exchange,CCS
+94,Casablanca Stock Exchange,CAS
+95,Cash Commodity Rates Americas,CC3
+96,Cash Commodity Rates Asia,CC2
+97,Cash Commodity Rates EMEA,CC1
+98,"CBOE Futures Exchange, LLC",CBF
+99,Central Asian Stock Exchange,CAE
+100,Central Bank of Indonesia,JK$
+101,Central Russian Universal Exchange,CRU
+102,Chengdu United Futures Exchange,CUF
+103,Chicago Board of Trade,CBT
+104,Chicago Board Options Exchange,CBO
+105,Chicago Board Options Exchange,WCB
+106,Chicago Board Options Exchange for Nasdaq Large Cap Equity,LCW
+107,Chicago Board Options Exchange for Nasdaq Small Cap Equity,SCW
+108,Chicago Mercantile Exchange,CME
+109,Chicago Rice and Cotton Exchange,CRC
+110,Chicago Stock Exchange for Nasdaq Small Cap,SCM
+111,Chile Electronic Exchange,BEC
+112,China Commod & Fut Exch Inc of Hainan,CFE
+113,China Money Rates,CN$
+114,China Zhengzhou Commodity Exchange,ZHC
+115,"China, Non-Exchange FI Update",#CN
+116,Chittagong Stock Exchange Ltd,CHT
+117,Chongqing Commodity Exchange,CQC
+118,Chubu Commodity Exchange,CCX
+119,Chur Stock Exchange,CHU
+120,Cincinnati Stock Exchange for Nasdaq Large Cap,LCC
+121,Cincinnati Stock Exchange for Nasdaq Small Cap,SCC
+122,CME Growth and emerging markets,GEM
+123,CME:Index and Options Market,IOM
+124,CME:International Monetary Market,IMM
+125,Colombia Stock Exchange,COL
+126,Colombo Stock Exchange,CSE
+127,Commodities Exchange Centre (CEC),CMX
+128,Commodity and Monetary Exchange of Malaysia (COMMEX Malaysia),CMM
+129,Companies Tracked By Editorial,CNN
+130,Consolidated European Quotes,CEQ
+131,Consolidated Issues listed by Boston SE,BSQ
+132,Consolidated Issues listed by CBOE,WCQ
+133,CONSOLIDATED ISSUES LISTED BY MIDWEST SE,MWQ
+134,Consolidated Issues Listed By Pacific SE,PSQ
+135,Consolidated Issues listed by Philadelphia SE,PHQ
+136,Consolidated UK Quotes,CUQ
+137,Copenhagen Stock Exchange,CPH
+138,Cordoba Stock Exchange,COR
+139,Costa Rica Electronic Stock Exchange,CRE
+140,Costa Rica National Stock Exchange,CRN
+141,Cote Bleu,FMF
+142,Currency Data Base,CU$
+143,Dalian Commodity Exchange,DLC
+144,Dar es Salaam Stock Exchange,DSS
+145,"Denmark, Non-Exchange FI Update",#DK
+146,Dhaka Stock Exchange Ltd,DSE
+147,Doha Securities Market,DSM
+148,Dow Jones Global Indices,DJI
+149,DTB,DTB
+150,Dubai Financial Market,DXB
+151,Dublin Stock Exchange,DUB
+152,"Dublin, Non-Exchange FI Updates",#IE
+153,Dunedin Regional Stock Exchange,DUN
+154,Dusseldorf Stock Exchange,DUS
+155,EASDAQ SA,EAS
+156,El Salvador Stock Exchange,ELS
+157,Emerging Company Marketplace,ECM
+158,Energy Exchange-Friday RAM updates,EF$
+159,Energy Exchange-Tues/Thurs RAM updates,AT$
+160,Energy Exchange-Tues/Thurs REMA updates,TE$
+161,Energy Exchange-Wednesday RAM updates,WE$
+162,Energy Exchange-Wednesday Singapore upd,WS$
+163,Energy Options Exchange,ENO
+164,EnMO,EMO
+165,Eurex,EUX
+166,Eurex Market Depth,EUD
+167,Eurex US,EUS
+168,EURO MTS-LISTINO,ME2
+169,"Eurobonds, Non-Exchange FI Update",#XS
+170,EuroMTS Ltd,MTE
+171,EuroNext,NXT
+172,Euronext Amsterdam NV,AEX
+173,Euronext Brussels,BRU
+174,EURONEXT CASH LEVEL 1,ES1
+175,EURONEXT CASH LEVEL 2,ENS
+176,Euronext Indices,ENX
+177,Europe and Mediterranean Bunkers,RE$
+178,European Energy Exchange,EEX
+179,European Mercantile Exchange,EME
+180,European Warrant Exchange (EUWAX),EWX
+181,EXAA Energy Exchange Austria,EXA
+182,Exotic Forex,EX@
+183,Financial Express,FEP
+184,"Financial Terminal Market, Amsterdam",FTM
+185,Finland Options Market (Helsinki Securities & Derivatives Exchange),FOM
+186,"Finland, Non-Exchange FI Update",#FI
+187,Finnish Electricity Exchange,ELX
+188,Fixings,FIX
+189,Florence Stock Exchange,FIR
+190,"France, Non-Exchange FI Update",#FR
+191,Frankfurt Stock Exchange,FRA
+192,FTSE International,FSI
+193,FTSE UK Trader,FST
+194,Fukuoka Stock Exchange,FKA
+195,Geneva Stock Exchange,GVA
+196,Genoa Stock Exchange,GOA
+197,German Inland Gas Oil,RG$
+198,"Germany, Non-Exchange FI Update",#DE
+199,Ghana Stock Exchange,GSE
+200,Global Best,GBE
+201,"Greece, Non-Exchange FI Update",#GR
+202,Gretai Securities Market,TWO
+203,Guangdong United Futures Exchange,GUF
+204,Guangzhou Commodities & Futures Exchange,GZC
+205,Guayaquil Stock Exchange,GYQ
+206,Hamburg Stock Exchange,HAM
+207,HANOVER COMMODITY EXCHANGE,WTB
+208,Hanover Stock Exchange,HAN
+209,Helsinki Options & Futures Exchange,HOM
+210,Helsinki Stock Exchange,HEL
+211,HFE Rolling Forex,$HF
+212,Hiroshima Stock Exchange,HIR
+213,Ho Chi Minh Securities Trading Centre,VSE
+214,Hokkaido Grain,HGE
+215,Hong Kong Futures Exchange Ltd,HFE
+216,Hong Kong Money Rates,HK$
+217,"Hong Kong, Non-Exchange FI Update",#HK
+218,iBOXX Ltd,IBX
+219,Iceland Fixed Income,#IS
+220,Iceland Stock Exchange,ICX
+221,India Non-Exchange FI Update,#IN
+222,Indian Government Benchmarks,IBK
+223,Indonesia Funds,ID$
+224,Instinet,INS
+225,Inter Bank Information Systems (IBIS),IBS
+226,Interbank Rates,IB$
+227,Interbolsa Portugal,MCP
+228,International Brunei Exchange,IBU
+229,International LPG,IL$
+230,International Petroleum Exchange,IPE
+231,International Securities Exchange,ISO
+232,Iran Non Exchange Forex,IR$
+233,Irish Futures and Options Market,IFX
+234,Island Futures Exchange LLC,IFE
+235,Istanbul Gold Exchange,IGE
+236,Istanbul Stock Exchange,IST
+237,Istanbul Stock Exchange (Mutual Funds),ISF
+238,"Istanbul, Non-Exchange FI Update",#TR
+239,Italian Government Forwards,IGF
+240,"Italy, Non-Exchange FI Update",#IT
+241,Jakarta Futures Exchange,JFX
+242,Jakarta Stock Exchange,JKT
+243,Japan Spot Products,JA$
+244,"Japan, Non-Exchange FI Update",#JP
+245,Japanese Bond Trading Co (JBTC),JBT
+246,JASDAQ - OTC (Japan Securities Dealers' Association),JSD
+247,Jiway Ltd,JIW
+248,Kanmon Commodity Exchange,FFE
+249,Kansai Agricultural Commodity,KEX
+250,Kansas City Board of Trade,KBT
+251,"Kazakhstan, Non-Exchange FI Update",#KZ
+252,Kazakstan Stock Exchange,KAZ
+253,Kobe Rubber Exchange,KRE
+254,Korea Electronic Communications Network,KEC
+255,Korea Futures Exchange,KFE
+256,Korea Securities Dealers Automated Quotation (KOSDAQ),KOE
+257,Korea Stock Exchange,KSC
+258,Korea Stock Exchange - Bond Data,KSB
+259,Korean Money Rates (Mon-Fri),KS$
+260,Korean Money Rates (Mon-Sat),KO$
+261,Korean OTC Bonds,#KR
+262,Kuala Lumpur Stock Exchange,KLS
+263,Kuwait Stock Exchange,KUW
+264,Kyoto Stock Exchange,KYO
+265,La Plata Stock Exchange,LAP
+266,Lagos Stock Exchange,LAG
+267,LATIBEX,LAT
+268,Lausanne Stock Exchange,LAU
+269,LIFFE/NASDAQ Single Stock Futures Exchange,NLX
+270,Lille Commodity Exchange,LIC
+271,Lille Stock Exchange,LIL
+272,Lima Stock Exchange,LMA
+273,Lipper,LIP
+274,Lipper Canadian Mutual Funds,LPC
+275,Lisbon Stock Exchange,LIS
+276,"Ljubljana Stock Exchange, Inc",LJU
+277,London Commodity Exchange,LCE
+278,London Forex,LD@
+279,London Futures & Options Exchange,LFO
+280,London Futures and Options Exchange,FOX
+281,London Latest Touch System,LLT
+282,London Meat Futures Exchange,LMF
+283,London Over The Counter Market,LOT
+284,London Stock Exchange,LSE
+285,Lucerne Stock Exchange,LUZ
+286,Lusaka Stock Exchange,LUS
+287,Luxembourg Stock Exchange,LUX
+288,"Luxembourg, Non-Exchange FI Update",#LU
+289,Lyon Stock Exchange,LYO
+290,Madras Stock Exchange Ltd,MDS
+291,Madrid Fixed Income Market,MFI
+292,Madrid Stock Exchange,MAD
+293,MAE Argentina,MAE
+294,Maeba Cocoons Exchange,MDC
+295,Makati Stock Exchange,MAK
+296,Malawi Stock Exchange,MLS
+297,Malaysia Derivatives Exchange Bhd,MDX
+298,"Malaysia, Non-Exchange FI Update",#MY
+299,Malaysian Money Rates,MY$
+300,Malta Stock Exchange,MLT
+301,Manila International Futures Exchange,MIF
+302,Manila Stock Exchange,MNL
+303,Maricaibo Stock Exchange,MRC
+304,Marseilles Stock Exchange,MRS
+305,MATIF,MAT
+306,Mdex Commodity Market,KLC
+307,Mdex MGS Futures Market,MBM
+308,Mdex Non-Equity Financial Market,MME
+309,Medellmn Stock Exchange,MED
+310,Mediterranean Spot Products,MD$
+311,Melbourne Stock Exchange,MEL
+312,Mendoza Stock Exchange,MEN
+313,Mercado A Termino de Buenos Aires,BCC
+314,Mercado de Deuda Publica en Anotaciones,MCA
+315,Mercato Telematico Titoli Stat,MST
+316,Merrill Lynch Eurobonds,MLY
+317,Metrex Stock Exchange,154
+318,Mexican Stock Exchange,MEX
+319,MEXICO STOCK EXCH (INTERMEDIATE MARKET),MXI
+320,"Mexico, Non-Exchange FI Update",#MX
+321,MidAmerica Commodities Exchange,MAC
+322,MidEast Spot Products,ME$
+323,Midwest Stock Exchange,MID
+324,Midwest Stock Exchange for Nasdaq Large Cap,LCM
+325,MIF SpA,IFM
+326,Milan Stock Exchange,MIL
+327,Minneapolis Grain Exchange,MGE
+328,Monday Update Only,MO$
+329,MONEP,MNP
+330,Monitor Amsterdam Rates,AM$
+331,Monitor Asian Rates,AS$
+332,Monitor Brussels Rates,BR$
+333,Monitor European Rates,EU$
+334,Monitor Frankfurt Rates,FF$
+335,Monitor General Exchange Offset,GMT
+336,Monitor Indian Rates,IN$
+337,Monitor Latin American Rates,LA$
+338,Monitor London Rates,LO$
+339,Monitor New Zealand Rates,NZ$
+340,Monitor North American Rates,NA$
+341,Monitor Paris Rates,PA$
+342,Monitor Singapore Rates,SI$
+343,Monitor Sydney Rates,SY$
+344,Monitor Tokyo Rates,TO$
+345,Monitor Wellington Rates,WL$
+346,Montevideo Electronic Stock Exchange,BEU
+347,Montevideo Stock Exchange,MTV
+348,Montreal Exchange,MON
+349,Montreal Options Exchange,MOE
+350,Montreal SE IOM Division,MIO
+351,Montreal SE Mercantile Division,MDM
+352,Moscow Central Stock Exchange,MCS
+353,Moscow Commodities Exchange,MOS
+354,Moscow Interbank Currency Exchange (MICEX),MCX
+355,Moscow Oil Exchange,MOI
+356,Moscow Stock Exchange (MOSTEX),MSE
+357,MSG Bond Index,BIN
+358,MTS Amsterdam,MTA
+359,MTS Austrian Market,MTR
+360,MTS Belgium,MTC
+361,MTS Denmark,MTD
+362,MTS Finland,MTL
+363,MTS Finland - Listino,ML2
+364,MTS France,MTF
+365,MTS Germany,MTG
+366,MTS Germany - Listino,MG2
+367,MTS Ireland,MTI
+368,MTS Ireland - Listino,MI2
+369,MTS ITALY - LISTINO,MS2
+370,MTS ITALY - LISTINO,MTS
+371,MTS PORTUGAL,MT1
+372,MTS Spain,MTU
+373,Munich Stock Exchange,MUN
+374,Muscat Securities Market,MUS
+375,Nagoya Stock Exchange,NGO
+376,Nagoya Textile Exchange,NTC
+377,Nairobi Stock Exchange,NAI
+378,NAKADACHI SECURITIES,NAK
+379,Nancy Stock Exchange,NAY
+380,Nanjing Petroleum Exchange,XXX
+381,Nantes Stock Exchange,NAN
+382,Naples Stock Exchange,NAP
+383,NASD Alternative Display Facility for Nasdaq Large Cap,ADF
+384,NASD Alternative Display Facility for Nasdaq Small Cap,ADS
+385,NASD Alternative Display Facility for NYSE/AMEX Issues,ADC
+386,NASD Alternative Quotation Systems,NQS
+387,NASD Trace Feed,NSD
+388,Nasdaq Depth View,NDV
+389,NASDAQ DEUTSCHLAND,NQD
+390,NASDAQ International Marketing System,NIM
+391,NASDAQ Japan Exchange,NAJ
+392,NASDAQ National Market System,NMS
+393,NASDAQ Stock Exchange Consolidated Large Cap,NMQ
+394,NASDAQ Stock Exchange Consolidated Small Cap,NAQ
+395,Nasdaq Total View,NTV
+396,NASDAQ Unit Trust,UIT
+397,National Stock Exchange,CIN
+398,National Stock Exchange of India,NSI
+399,National Stock Exchange of Lithuania,VLX
+400,Natural Gas Exchange,NG$
+401,"Netherlands, Non-Exchange FI Update",#NL
+402,Neuenberg Stock Exchange,NEU
+403,New Market (France),LNM
+404,New Securities Exchange Montenegro,POD
+405,New York Board of Trade Indices,NBI
+406,New York Consolidated,NYQ
+407,New York Forex,NY@
+408,New York Harbour Spot Products,NY$
+409,New York Mercantile Exchange (NYMEX),NYM
+410,New York Options Exchange,NYO
+411,New York Stock Exchange,NYS
+412,New York Stock Exchange for Nasdaq Large Cap,LCN
+413,New York Stock Exchange for Nasdaq Small Cap,SCN
+414,New York Stock Exchange OpenBook,NY2
+415,New Zealand Futures & Options Exchange,NFE
+416,New Zealand Interest Rate Indices,NZI
+417,New Zealand Stock Exchange,NZE
+418,"New Zealand, Non-Exchange FI Update",#NZ
+419,NEWEX Borse AG,NWX
+420,Nihon Keizai Shimbun Inc,NIK
+421,Niigata Securities Exchange,NII
+422,Nordic Growth Market,NGM
+423,NordPool ASA,NPX
+424,North American Bunkers,RA$
+425,North Cyprus Exchange,NCE
+426,North West Europe Spot Products,NW$
+427,"Norway, Non-Exchange FI Update",#NO
+428,Norwegian Fund Broker Association,NFF
+429,Norwegian Options Market,NOM
+430,NQB US Pink Sheet Quotations,NQB
+431,Occidente Stock Exchange,OSE
+432,OFEX,OFX
+433,OMLX London Securities & Derivatives Exchange,OML
+434,One Chicago LLC,ONE
+435,Oporto Derivatives Exchange,BDP
+436,Options Market France,OMF
+437,Options Price Reporting Authority BBO,OPQ
+438,Osaka Grain Exchange,OGE
+439,Osaka Mercantile Exchange,OME
+440,Osaka Securities Exchange,OSA
+441,Osaka Textile Exchange,OTE
+442,Oslo Stock Exchange,OSL
+443,OTC Bulletin Board Market,OBB
+444,Over The Counter Exchange of India,OTI
+445,Over The Counter Mkt,OTC
+446,Pacific Options Exchange,PAO
+447,Pacific Stock Exchange,PSE
+448,Pacific Stock Exchange for Nasdaq Large Cap,LCP
+449,Pacific Stock Exchange for Nasdaq Small Cap,SCP
+450,Palermo Stock Exchange,PAL
+451,Palestine Securities Exchange,PLS
+452,Panama Stock Exchange,PAN
+453,Paris Commodity Exchange,PCE
+454,Paris Financial Futures,PFF
+455,Paris Stock Exchange,PAR
+456,PFTS Securites Trading System (Ukraine),UTS
+457,PFTS Securities Trading System (Ukraine),PFT
+458,Philadelphia Board of Trade,PBT
+459,Philadelphia Options Exchange,PHO
+460,Philadelphia Stock Exchange,XPH
+461,Philadelphia Stock Exchange for Nasdaq Large Cap,LCX
+462,Philadelphia Stock Exchange for Nasdaq Small Cap,SCX
+463,"Philippine Stock Exchange, Inc",PHS
+464,Philippines Money Rate,PH$
+465,Philippines Non Exchange FI Update,#PH
+466,"Poland, Non-Exchange FI Update",#PL
+467,Polish Power Exchange,POX
+468,"Portugal, Non-Exchange FI Update",#PT
+469,Prague Stock Exchange,PRA
+470,Pru-Bache LME Contributor Rates,PRU
+471,PULPEX,PUX
+472,Quito Stock Exchange,QTO
+473,RA Energy Exchange,EA$
+474,RAM Energy Exchange,EM$
+475,RASDAQ,RSQ
+476,REDIBook,RED
+477,REMA Energy Exchange,EE$
+478,Reuters,REU
+479,RIM Intelligence Co Ltd,RII
+480,Rio de Janeiro Stock Exchange,RIO
+481,Romanian Equities Traded but not Listed,TNL
+482,Romanian Non-Exchange FI Update,#RO
+483,Rome Stock Exchange,ROM
+484,Rosario Stock Exchange,ROS
+485,Rubber Association of Singapore,RAS
+486,"Russia, Non-Exchange FI Update",#RU
+487,Russian OTC Exchange,RUO
+488,Russian Stock Exchange,RUS
+489,Russian Trading System - RTS,RTS
+490,Santiago Stock Exchange,SGO
+491,Sao Paulo Commodity and Futures Exchange,BMF
+492,Sao Paulo Stock Exchange,SAO
+493,Sapporo Securities Exchange,SAP
+494,Saudi Arabian Monetary Authority,SAU
+495,Saudi Arabian Non-Exchange FI update,#SA
+496,Shanghai Cereals & Oils Exchange,SCE
+497,Shanghai Futures Exchange,SHF
+498,Shanghai Gold Exchange,SGE
+499,Shanghai Metal Exchange,SME
+500,Shanghai Stock Exchange,SHH
+501,Shenyang Commodity Exchange,SYC
+502,Shenzhen Mercantile Exchange,SZM
+503,Shenzhen Stock Exchange,SHZ
+504,SIBE - Mercado continuo Espanol,MCE
+505,Siberian Interbank Currency Exchange,SIK
+506,Sibiu Monetary-Financial and Commodities Exchange,SFC
+507,SINAC,SNC
+508,Singapore Commodity Exchange Ltd,SIC
+509,Singapore Energy Exchange,ES$
+510,Singapore Exchange Securities Trading,SES
+511,Singapore FEOP,RS$
+512,Singapore International Monetary Exchange Ltd,SIM
+513,Singapore Spot Product Prices,SS$
+514,Singapore Unit Trusts and Funds,SG$
+515,"Singapore, Non-Exchange FI Update",#SI
+516,SOMA Stock Exchange,SMA
+517,Source is a Reuter Contributor,RCT
+518,"South Africa, Non-Exchange FI Update",#ZA
+519,South African Futures Exchange,SFX
+520,South African Quotations (SAQUOT),RSA
+521,South Korea Non-Exchange FI Update,#KS
+522,South Urals Stock Exchange,SUE
+523,"Spain, Non-Exchange FI Update",#ES
+524,Spanish Financial Futures Market MEFF Renta Fija,MRF
+525,Spanish Investment Funds,FDI
+526,Spanish Options Exchange,MFX
+527,SPECTRON,SPN
+528,Sri Lanka Money Rates,LK$
+529,St Gallen Stock Exchange,SGA
+530,St Petersburg Currency Exchange,SPC
+531,St Petersburg Stock Exchange,SPS
+532,Stock Exchange of Mauritius Ltd,MAU
+533,Stockholmsborsen - cash,STO
+534,Stockholmsborsen - derivatives,SOM
+535,STOXX,STX
+536,Stuttgart Stock Exchange,STU
+537,Surabaya Stock Exchange,SUB
+538,Suzhou Commodity Exchange,SUC
+539,Svenska Penningmarknad,PMI
+540,"Sweden, Non-Exchange FI Update",#SE
+541,Swedish Mutual Fund Association,FBF
+542,Swiss Exchange,SWX
+543,Swiss Options and Financial Futures Exchange (SOFFEX),SFF
+544,"Switzerland, Non-Exchange FI Update",#CH
+545,Sydney Futures Exchange,SFE
+546,Taiwan Futures Exchange,TIM
+547,Taiwan Money Rates,TW$
+548,Taiwan Stock Exchange,TAI
+549,"Taiwan, Non-Exchange FI Update",#TW
+550,Tallinn Stock Exchange (Estonia),TLX
+551,TDB Energy - Thursday Singapore UPD,SE$
+552,Tel-Aviv Stock Exchange,TLV
+553,Thai Bond Dealing Centre,BDC
+554,Thailand Money Rates,TH$
+555,The Agricultural Futures Exchange of Thailand,AFT
+556,The Bahrain Stock Exchange,BAH
+557,The Baltic Exchange,BFE
+558,The Barcelona Stock Exchange,BAR
+559,The Bermuda Stock Exchange,BSX
+560,The Bucharest Stock Exchange,BUH
+561,The Calcutta Stock Exchange,CAL
+562,"The Channel Islands Stock Exchange, LBG",CIE
+563,The Cyprus Stock Exchange,CYS
+564,The Delhi Stock Exchange Association Ltd,DES
+565,The Irish Stock Exchange,ISE
+566,"The Island ECN, Inc",ISL
+567,The Island Trading,ILT
+568,The Johannesburg Stock Exchange,JNB
+569,The Karachi Stock Exchange (Guarantee) Ltd,KAR
+570,The Kuala Lumpur Options and Financial Futures Exchange (KLOFFE),KLF
+571,The London International Financial Futures and Options Exchange,LIF
+572,The London Metal Exchange,LME
+573,The Namibian Stock Exchange,NSE
+574,The Nasdaq Stock Market,NAS
+575,The Oporto Derivatives Exchange,OPO
+576,The Riga Stock Exchange,RIX
+577,The Spanish Options Exchange,MRV
+578,The Stock Exchange of Hong Kong Ltd,HKG
+579,The Stock Exchange of Thailand,SET
+580,The Toronto Stock Exchange,TOR
+581,The Winnipeg Commodity Exchange,WPG
+582,The Winnipeg Stock Exchange,WPE
+583,The Zagreb Stock Exchange,ZAG
+584,Third Market Corp,THM
+585,Third-Party Economic Database,ECO
+586,Tianjin United Future Exchange,TUF
+587,Tirana Stock Exchange,TIR
+588,TLX Trading Lab,TXX
+589,Tokyo Commodity Exchange (TOCOM),TCE
+590,Tokyo Energy Exchange,ET$
+591,Tokyo Grain Exchange,TGE
+592,Tokyo International Financial Futures Exchange,TFF
+593,Tokyo Stock Exchange,TYO
+594,Tokyo Sugar Exchange,TSU
+595,Toronto Forex,TO@
+596,Toronto Futures Exchange,TFE
+597,Toronto Options Exchange,TOE
+598,Trieste Stock Exchange,TRI
+599,TSX Venture Exchange,CVE
+600,TSX Venture Exchange (Inactive Board),NEX
+601,Tunis Stock Exchange,TUN
+602,Turin Stock Exchange,TRN
+603,U.S. Gulf Spot Product,UG$
+604,U.S. LPG,UL$
+605,U.S. Mid-Continent Group3 Spot Pr.,RT$
+606,U.S. Mid-Continent Sp. Pr. (Chicago),RC$
+607,U.S. Natural Gas Prices,RN$
+608,U.S. West Coast Spot Product,UW$
+609,Uganda Securities Exchange,UGS
+610,UK Power Exchange,PWX
+611,Ukraine Commodity Exchange,UKR
+612,Ukrainian Interbank Currency Exchange,UCE
+613,"United Kingdom, Non-Exchange FI Update",#UK
+614,"United States, Non-Exchange FI Update",#US
+615,Uruguayan Electronic Exchange,UEX
+616,US Composite - AMSE,UCA
+617,US Composite - NYSE,UCQ
+618,US Intermarket Level 2,IMQ
+619,USA Pink Sheets,PNK
+620,Valencia Stock Exchange,VAL
+621,Vancouver Options Exchange,VAO
+622,Vancouver Stock Exchange,VAN
+623,Venezuelan Electronic Stock Exchange,BEV
+624,Venice Stock Exchange,VCE
+625,Vienna Stock Exchange - Cash Market,VIE
+626,Vietnam Money Rates,VN$
+627,Virt-X PLC,VTX
+628,Warsaw Stock Exchange,WSE
+629,Washington Stock Exchange,WAS
+630,Wellington Regional Stock Exchange,WLG
+631,WM Co,WMC
+632,World Crude Netbacks,NE$
+633,World Crude Spot,CR$
+634,World Energy Exchange,EW$
+635,World Indices,IND
+636,World Monitor Exchange,GL$
+637,Wuhan Securities Exchange Centre,WHS
+638,Xetra,GER
+639,Yokohama Commodity Exchange,YCE
+640,Yokohama Silk Exchange,YSE
+641,Zimbabwe Stock Exchange,ZSE
+642,Zurich Stock Exchange,ZRH

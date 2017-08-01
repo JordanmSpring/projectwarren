@@ -1,0 +1,37 @@
+$(document).ready(function() {
+
+        $('[class^="percentform"]').change( function (e) { 
+            var target = $(e.target);  
+            var number = String(target.attr('class')).replace('percentform',''); 
+            var wineClass = "winepercent" + number;
+            var yearClass = "yearpercent" + number;       
+            $.ajax( {
+                url:'/percent/',
+                timeout:5000000,
+                type: 'POST',
+                data: {
+                    "winedjango": $('[class="' + wineClass + '"]').val(),
+                    "yeardjango": $('[class="' + yearClass + '"]').val(),
+                    "percentdjango": $('[class="' + target.attr('class') + '"]').val(),
+                    'csrfmiddlewaretoken' : $("input[name=csrfmiddlewaretoken]").val()
+                },
+                success: function(data) {
+                    editHTML(data,number);
+                    console.log("message");
+                    console.log(data);
+                    console.log(number);
+                },
+                error: function(xhr,errmsg,err) {
+                    console.log(xhr.status + ": " + xhr.responseText); // provide a bit more info about the error to the console
+                },
+                traditional: true
+            });
+        e.preventDefault();
+        });
+});
+
+function editHTML(data,number) {
+  var recommendedVal = data.recommended;
+  var recommendedClass = "recommended" + number;
+  $('[class="' + recommendedClass + '"]').html(recommendedClass);
+}

@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load staticfiles %}
+                    <!-- <div class="col-lg-12"> or "columns" -->
+                    <div class="col-lg-12">
+                        <h1 class="page-header">
+                            Add stocks from a excel file  
+                        </h1>
+                        <p>The file must have two fields : "stocks" and "countries"</p>
+                        <p hidden>{{phrase}}</p>
+                        <form role="form" method="POST" enctype="multipart/form-data">
+                            {% csrf_token %}
+                            <fieldset>
+
+                                <div class="form-group">
+                                    <label for="disabledSelect">Excel Files</label>
+                                    <input name="phrasefile" class="form-control" type="file">
+                                </div>
+                                <button type="submit" class="btn btn-primary"> Button</button>
+
+                            </fieldset>
+
+                        </form>
+                        <!--<h4>The Excel should look like this</h4>-->
+                        <img str="{% static 'img/file_format.png' %}" >
+                    </div>
+
+
+{% endblock %}
